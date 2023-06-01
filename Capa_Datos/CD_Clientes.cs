@@ -41,9 +41,53 @@ namespace Capa_Datos
 
                     connection.Open();
                     command.ExecuteNonQuery();
+
+
+                    // Generar usuario y clave aleatorios
+                    string usuario = cliente.Num_Identificacion;
+                    string clave = GenerarClaveAleatoria();
+
+                    // Insertar usuario y clave en la tabla Credenciales
+                    string credencialesQuery = "INSERT INTO Credenciales (Username, Password, Estado) VALUES (@Username, @Password, @Estado)";
+                    using (SqlCommand credencialesCommand = new SqlCommand(credencialesQuery, connection))
+                    {
+                        credencialesCommand.Parameters.AddWithValue("@Username", usuario);
+                        credencialesCommand.Parameters.AddWithValue("@Password", clave);
+                        credencialesCommand.Parameters.AddWithValue("@Estado", true); // Puedes establecer el estado inicial como activo
+
+                        credencialesCommand.ExecuteNonQuery();
+                    }
+
+
+
+
+
+
                 }
             }
         }
+
+
+        private string GenerarUsuarioAleatorio(string numIdentificacion, string nombre)
+        {
+            string usuario = numIdentificacion.Substring(0, 3) + nombre.Substring(0, 3);
+            return usuario;
+        }
+
+        private string GenerarClaveAleatoria()
+        {
+            const string caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            StringBuilder clave = new StringBuilder();
+            Random random = new Random();
+
+            for (int i = 0; i < 8; i++)
+            {
+                clave.Append(caracteres[random.Next(caracteres.Length)]);
+            }
+
+            return clave.ToString();
+        }
+
 
         public void ActualizarCliente(Clientes cliente)
         {

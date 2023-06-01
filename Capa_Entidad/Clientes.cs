@@ -21,5 +21,9 @@ namespace Capa_Entidad
         public string Profesion { get; set; }
         public string Lugar_Trabajo { get; set; }
         public int Tipo_Cliente { get; set; }
+
+        // Propiedades de navegación
+        public List<CuentaCorriente> CuentasCorriente { get; set; }
+        public List<CuentaAhorro> CuentasAhorro { get; set; }
     }
 }

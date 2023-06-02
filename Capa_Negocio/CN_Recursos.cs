@@ -12,10 +12,6 @@ namespace Capa_Negocio
     {
         private string connectionString = Conexion.cn;
 
-  
-
-
-
         public bool VerificarEstadoActivo(string numCuenta)
         {
             bool cuentaActiva = false;

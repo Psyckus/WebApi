@@ -1,4 +1,4 @@
-﻿using Capa_Datos;
+﻿
 using Capa_Entidad;
 using Capa_Negocio;
 using System;

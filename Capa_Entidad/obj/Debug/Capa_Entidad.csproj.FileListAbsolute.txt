@@ -10,3 +10,6 @@ C:\Users\franc\Desktop\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.Assemb
 C:\Users\franc\Desktop\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
 C:\Users\franc\Desktop\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.dll
 C:\Users\franc\Desktop\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\Newtonsoft.Json.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\Newtonsoft.Json.xml
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CopyComplete

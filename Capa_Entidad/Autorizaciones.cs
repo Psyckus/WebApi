@@ -29,16 +29,6 @@ namespace Capa_Entidad
 
         public string Estado { get; set; }
 
-
-
-
-
-
-
-
-
-
-
     }
 
 }

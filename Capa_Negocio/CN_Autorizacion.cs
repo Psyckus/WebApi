@@ -23,9 +23,5 @@ namespace Capa_Negocio
         {
             autorizaciones.CrearAutorizacion(autorizacion);
         }
-
-
-
-
     }
 }

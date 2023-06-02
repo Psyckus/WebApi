@@ -38,18 +38,10 @@ namespace Capa_Datos
                     connection.Open();
                     command.ExecuteNonQuery();
                 }
-
-
-
-
-
-
-
-
-
-
-
             }
+
+
+
         }
 
 

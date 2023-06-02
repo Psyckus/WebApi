@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,7 +24,10 @@ namespace Capa_Entidad
         public int Tipo_Cliente { get; set; }
 
         // Propiedades de navegación
+        [JsonIgnore]
         public List<CuentaCorriente> CuentasCorriente { get; set; }
+        [JsonIgnore]
+
         public List<CuentaAhorro> CuentasAhorro { get; set; }
     }
 }

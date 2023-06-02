@@ -277,3 +277,5 @@ C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.csproj.CoreCompileInp
 C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.csproj.CopyComplete
 C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.dll
 C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.pdb
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\Capa_Negocio.dll.config
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\Capa_Datos.dll.config

@@ -35,3 +35,5 @@ C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.Core
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\charl\Downloads\WebApi2\Capa_Negocio\bin\Debug\Capa_Negocio.dll.config
+C:\Users\charl\Downloads\WebApi2\Capa_Negocio\bin\Debug\Capa_Datos.dll.config

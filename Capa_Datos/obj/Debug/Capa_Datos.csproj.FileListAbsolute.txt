@@ -29,3 +29,4 @@ C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreComp
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll.config

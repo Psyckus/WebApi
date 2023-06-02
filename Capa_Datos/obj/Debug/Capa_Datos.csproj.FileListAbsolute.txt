@@ -18,3 +18,14 @@ C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb
 C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Newtonsoft.Json.dll
 C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb

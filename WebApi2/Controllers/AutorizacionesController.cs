@@ -29,7 +29,12 @@ namespace WebApi2.Controllers
             return Ok();
         }
 
-
+        [HttpPut]
+        public IHttpActionResult ActualizarAutorizacion(Autorizaciones autorizacion)
+        {
+            cn_autorizacion.ActualizarAutorizacion(autorizacion);
+            return Ok();
+        }
 
 
 

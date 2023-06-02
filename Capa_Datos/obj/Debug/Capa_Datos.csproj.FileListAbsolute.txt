@@ -7,3 +7,12 @@ C:\Users\Usuario\source\repos\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.Cor
 C:\Users\Usuario\source\repos\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
 C:\Users\Usuario\source\repos\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\Usuario\source\repos\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb

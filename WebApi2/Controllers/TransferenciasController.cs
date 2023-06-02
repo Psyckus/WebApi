@@ -22,6 +22,7 @@ namespace WebApi2.Controllers
         }
 
         [Route("api/transferencias")]
+
         [HttpPost]
         public IHttpActionResult RegistrarTransferencia(Transaccion transaccion)
         {
@@ -40,6 +41,9 @@ namespace WebApi2.Controllers
                 return BadRequest(ex.Message);
             }
         }
+
+        //Actualizar el estado de las transferencia interbancarias
+
 
 
 

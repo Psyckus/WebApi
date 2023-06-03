@@ -2,7 +2,9 @@
 using Capa_Entidad;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -132,58 +134,13 @@ namespace Capa_Negocio
             }
         }
 
-      
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        public void ActualizarEstado(String codigo, String estado)
+        {
+            datosTransaccion.ActualizarEstado(codigo, estado);
+        }
 
 
     }

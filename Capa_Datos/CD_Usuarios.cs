@@ -11,6 +11,7 @@ namespace Capa_Datos
     {
 
         private string connectionString = Conexion.cn;
+        //Le falta poner consulta para saber si esta activo o no
         public bool ValidarCredenciales(string username, string password)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))

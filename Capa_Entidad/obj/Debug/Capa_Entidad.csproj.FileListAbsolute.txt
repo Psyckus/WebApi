@@ -17,3 +17,16 @@ C:\Users\charl\Downloads\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.Asse
 C:\Users\charl\Downloads\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
 C:\Users\charl\Downloads\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.dll
 C:\Users\charl\Downloads\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\Capa_Entidad.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\MiniValidation.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\franc\Desktop\WebApi2\Capa_Entidad\bin\Debug\MiniValidation.xml
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\Capa_Entidad.dll.config
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\MiniValidation.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\Newtonsoft.Json.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\MiniValidation.xml
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\bin\Debug\Newtonsoft.Json.xml
+C:\Users\charl\Downloads\WebApi2\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CopyComplete

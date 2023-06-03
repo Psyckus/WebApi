@@ -279,3 +279,13 @@ C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.dll
 C:\Users\charl\Downloads\WebApi2\WebApi2\obj\Debug\WebApi2.pdb
 C:\Users\charl\Downloads\WebApi2\WebApi2\bin\Capa_Negocio.dll.config
 C:\Users\charl\Downloads\WebApi2\WebApi2\bin\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\Capa_Entidad.dll.config
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\Capa_Negocio.dll.config
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\MiniValidation.dll
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\System.ComponentModel.Annotations.dll
+C:\Users\franc\Desktop\WebApi2\WebApi2\bin\MiniValidation.xml
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\MiniValidation.dll
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\System.ComponentModel.Annotations.dll
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\Capa_Entidad.dll.config
+C:\Users\charl\Downloads\WebApi2\WebApi2\bin\MiniValidation.xml

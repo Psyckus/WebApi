@@ -20,8 +20,13 @@ namespace WebApi2.Controllers
         [HttpPost]
         public IHttpActionResult CrearCliente(Clientes cliente)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             cn_clientes.CrearCliente(cliente);
-            return Ok();
+            return CreatedAtRoute("DefaultApi",new {id = cliente.Codigo},cliente);
         }
 
         [HttpPut]

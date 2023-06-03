@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using System.Net.Http;
+
 
 namespace Capa_Entidad
 {
@@ -12,35 +14,37 @@ namespace Capa_Entidad
     {
         public string Codigo { get; set; }
         public string Num_Identificacion { get; set; }
-        public int Tipo_Identificacion { get; set; }
+        public string Tipo_Identificacion { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "El nombre es requerido")]
+        [MaxLength(2, ErrorMessage = "El nombre debe ser de dos caracteres")]
         public string Nombre { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "El Primer apellido es requerido")]
+
+        [MaxLength(2, ErrorMessage = "El apellido debe ser de dos caracteres")]
         public string Primer_Apellido { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "El Segundo apellido es requerido")]
+        //[Required(ErrorMessage = "El Segundo Apellido Es Obligatorio.")]
         public string Segundo_Apellido { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "La Direccion es requerida")]
+       // [Required(ErrorMessage = "La Direcion Es Obligatoria.")]
         public string Direccion { get; set; }
 
 
-        public int Perfil_Transaccional { get; set; }
+        public string Perfil_Transaccional { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "El Pais Es Requerido")]
-        public int Pais { get; set; }
+        //[Required(ErrorMessage = "El Nombre del Pais Es Obligatorio.")]
+        public string Pais { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "El Estado_Civil Es Requerido")]
-        public int Estado_Civil { get; set; }
+       // [Required(ErrorMessage = "El Estado_Civil Es Obligatorio.")]
+        public string Estado_Civil { get; set; }
 
-        [Required(AllowEmptyStrings = false, ErrorMessage = "La Profesion Es Requerida")]
+       // [Required(ErrorMessage = "La Profesion Es Obligatoria.")]
         public string Profesion { get; set; }
 
+        //[Required(ErrorMessage = "El Lugar De Trabajo Es Obligatorio.")]
         public string Lugar_Trabajo { get; set; }
 
-        public int Tipo_Cliente { get; set; }
+        public string Tipo_Cliente { get; set; }
 
         // Propiedades de navegación
         [JsonIgnore]

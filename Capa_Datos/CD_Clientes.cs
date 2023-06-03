@@ -2,6 +2,7 @@
 using Capa_Entidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -20,19 +21,20 @@ namespace Capa_Datos
             // Código para insertar el cliente en la base de datos
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Clientes (Codigo, Num_Identificacion, Tipo_Identificacion, Nombre, Primer_Apellido, Segundo_Apellido, Direccion, Perfil_Transaccional, Pais, Estado_Civil, Profesion, Lugar_Trabajo, Tipo_Cliente) " +
-                               "VALUES (@Codigo, @Num_Identificacion, @Tipo_Identificacion, @Nombre, @Primer_Apellido, @Segundo_Apellido, @Direccion, @Perfil_Transaccional, @Pais, @Estado_Civil, @Profesion, @Lugar_Trabajo, @Tipo_Cliente)";
+                //string query = "INSERT INTO Clientes (Codigo, Num_Identificacion, Tipo_Identificacion, Nombre, Primer_Apellido, Segundo_Apellido, Direccion, Perfil_Transaccional, Pais, Estado_Civil, Profesion, Lugar_Trabajo, Tipo_Cliente) " +
+                               //"VALUES (@Codigo, @Num_Identificacion, @Tipo_Identificacion, @Nombre, @Primer_Apellido, @Segundo_Apellido, @Direccion, @Perfil_Transaccional, @Pais, @Estado_Civil, @Profesion, @Lugar_Trabajo, @Tipo_Cliente)";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("SP_InsertarCliente", connection))
                 {
+                    command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@Codigo", cliente.Codigo);
                     command.Parameters.AddWithValue("@Num_Identificacion", cliente.Num_Identificacion);
                     command.Parameters.AddWithValue("@Tipo_Identificacion", cliente.Tipo_Identificacion);
                     command.Parameters.AddWithValue("@Nombre", cliente.Nombre);
                     command.Parameters.AddWithValue("@Primer_Apellido", cliente.Primer_Apellido);
                     command.Parameters.AddWithValue("@Segundo_Apellido", cliente.Segundo_Apellido);
-                    command.Parameters.AddWithValue("@Direccion", cliente.Direccion);
-                    command.Parameters.AddWithValue("@Perfil_Transaccional", cliente.Perfil_Transaccional);
+                    command.Parameters.AddWithValue("@Direcciona", cliente.Direccion);
+                    command.Parameters.AddWithValue("@Perfil_Transacciona", cliente.Perfil_Transaccional);
                     command.Parameters.AddWithValue("@Pais", cliente.Pais);
                     command.Parameters.AddWithValue("@Estado_Civil", cliente.Estado_Civil);
                     command.Parameters.AddWithValue("@Profesion", cliente.Profesion);
@@ -94,16 +96,18 @@ namespace Capa_Datos
             // Código para actualizar el cliente en la base de datos
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string query = "UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Primer_Apellido = @Primer_Apellido, Segundo_Apellido = @Segundo_Apellido, Direccion = @Direccion, Perfil_Transaccional = @Perfil_Transaccional, Pais = @Pais, Estado_Civil = @Estado_Civil, Profesion = @Profesion, Lugar_Trabajo = @Lugar_Trabajo, Tipo_Cliente = @Tipo_Cliente " +
-                               "WHERE Num_Identificacion = @Num_Identificacion";
+                //string query = "UPDATE Clientes SET Codigo = @Codigo, Nombre = @Nombre, Primer_Apellido = @Primer_Apellido, Segundo_Apellido = @Segundo_Apellido, Direccion = @Direccion, Perfil_Transaccional = @Perfil_Transaccional, Pais = @Pais, Estado_Civil = @Estado_Civil, Profesion = @Profesion, Lugar_Trabajo = @Lugar_Trabajo, Tipo_Cliente = @Tipo_Cliente " +
+                               //"WHERE Num_Identificacion = @Num_Identificacion";
 
-                using (SqlCommand command = new SqlCommand(query, connection))
+                using (SqlCommand command = new SqlCommand("SP_ActualizarClientes", connection))
                 {
+
+                    command.CommandType = CommandType.StoredProcedure;
                     command.Parameters.AddWithValue("@Codigo", cliente.Codigo);
                     command.Parameters.AddWithValue("@Nombre", cliente.Nombre);
                     command.Parameters.AddWithValue("@Primer_Apellido", cliente.Primer_Apellido);
                     command.Parameters.AddWithValue("@Segundo_Apellido", cliente.Segundo_Apellido);
-                    command.Parameters.AddWithValue("@Direccion", cliente.Direccion);
+                    command.Parameters.AddWithValue("@Direcciona", cliente.Direccion);
                     command.Parameters.AddWithValue("@Perfil_Transaccional", cliente.Perfil_Transaccional);
                     command.Parameters.AddWithValue("@Pais", cliente.Pais);
                     command.Parameters.AddWithValue("@Estado_Civil", cliente.Estado_Civil);
@@ -136,6 +140,8 @@ namespace Capa_Datos
             }
         }
 
+
+        //Ya tiene procedimiento almacenado
         public Clientes ObtenerClientePorIdentificacion(string identificacion)
         {
             // Código para obtener el cliente de la base de datos
@@ -156,17 +162,17 @@ namespace Capa_Datos
                         Clientes cliente = new Clientes();
                         cliente.Codigo = reader["Codigo"].ToString();
                         cliente.Num_Identificacion = reader["Num_Identificacion"].ToString();
-                        cliente.Tipo_Identificacion = Convert.ToInt32(reader["Tipo_Identificacion"]);
+                        cliente.Tipo_Identificacion = reader["Tipo_Identificacion"].ToString();
                         cliente.Nombre = reader["Nombre"].ToString();
                         cliente.Primer_Apellido = reader["Primer_Apellido"].ToString();
                         cliente.Segundo_Apellido = reader["Segundo_Apellido"].ToString();
                         cliente.Direccion = reader["Direccion"].ToString();
-                        cliente.Perfil_Transaccional = Convert.ToInt32(reader["Perfil_Transaccional"]);
-                        cliente.Pais = Convert.ToInt32(reader["Pais"]);
-                        cliente.Estado_Civil = Convert.ToInt32(reader["Estado_Civil"]);
+                        cliente.Perfil_Transaccional = reader["Perfil_Transaccional"].ToString();
+                        cliente.Pais = reader["Pais"].ToString();
+                        cliente.Estado_Civil = reader["Estado_Civil"].ToString();
                         cliente.Profesion = reader["Profesion"].ToString();
                         cliente.Lugar_Trabajo = reader["Lugar_Trabajo"].ToString();
-                        cliente.Tipo_Cliente = Convert.ToInt32(reader["Tipo_Cliente"]);
+                        cliente.Tipo_Cliente = reader["Tipo_Cliente"].ToString();
 
                         return cliente;
                     }
@@ -200,17 +206,17 @@ namespace Capa_Datos
                         Clientes cliente = new Clientes();
                         cliente.Codigo = reader["Codigo"].ToString();
                         cliente.Num_Identificacion = reader["Num_Identificacion"].ToString();
-                        cliente.Tipo_Identificacion = Convert.ToInt32(reader["Tipo_Identificacion"]);
+                        cliente.Tipo_Identificacion = reader["Tipo_Identificacion"].ToString();
                         cliente.Nombre = reader["Nombre"].ToString();
                         cliente.Primer_Apellido = reader["Primer_Apellido"].ToString();
                         cliente.Segundo_Apellido = reader["Segundo_Apellido"].ToString();
                         cliente.Direccion = reader["Direccion"].ToString();
-                        cliente.Perfil_Transaccional = Convert.ToInt32(reader["Perfil_Transaccional"]);
-                        cliente.Pais = Convert.ToInt32(reader["Pais"]);
-                        cliente.Estado_Civil = Convert.ToInt32(reader["Estado_Civil"]);
+                        cliente.Perfil_Transaccional = reader["Perfil_Transaccional"].ToString();
+                        cliente.Pais = reader["Pais"].ToString();
+                        cliente.Estado_Civil = reader["Estado_Civil"].ToString();
                         cliente.Profesion = reader["Profesion"].ToString();
                         cliente.Lugar_Trabajo = reader["Lugar_Trabajo"].ToString();
-                        cliente.Tipo_Cliente = Convert.ToInt32(reader["Tipo_Cliente"]);
+                        cliente.Tipo_Cliente = reader["Tipo_Cliente"].ToString();
 
                         clientes.Add(cliente);
                     }
@@ -239,17 +245,17 @@ namespace Capa_Datos
                         Clientes cliente = new Clientes();
                         cliente.Codigo = reader["Codigo"].ToString();
                         cliente.Num_Identificacion = reader["Num_Identificacion"].ToString();
-                        cliente.Tipo_Identificacion = Convert.ToInt32(reader["Tipo_Identificacion"]);
+                        cliente.Tipo_Identificacion = reader["Tipo_Identificacion"].ToString();
                         cliente.Nombre = reader["Nombre"].ToString();
                         cliente.Primer_Apellido = reader["Primer_Apellido"].ToString();
                         cliente.Segundo_Apellido = reader["Segundo_Apellido"].ToString();
                         cliente.Direccion = reader["Direccion"].ToString();
-                        cliente.Perfil_Transaccional = Convert.ToInt32(reader["Perfil_Transaccional"]);
-                        cliente.Pais = Convert.ToInt32(reader["Pais"]);
-                        cliente.Estado_Civil = Convert.ToInt32(reader["Estado_Civil"]);
+                        cliente.Perfil_Transaccional = reader["Perfil_Transaccional"].ToString();
+                        cliente.Pais = reader["Pais"].ToString()    ;
+                        cliente.Estado_Civil = reader["Estado_Civil"].ToString();
                         cliente.Profesion = reader["Profesion"].ToString();
                         cliente.Lugar_Trabajo = reader["Lugar_Trabajo"].ToString();
-                        cliente.Tipo_Cliente = Convert.ToInt32(reader["Tipo_Cliente"]);
+                        cliente.Tipo_Cliente = reader["Tipo_Cliente"].ToString();
 
                         clientes.Add(cliente);
                     }

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -139,6 +140,8 @@ namespace Capa_Datos
         }
 
 
+
+        
         private int ObtenerSaldoCuentaCorriente(string cuenta)
         {
             int saldo = 0;
@@ -171,9 +174,6 @@ namespace Capa_Datos
 
         private int ObtenerSaldoCuentasAhorro(string cuenta)
         {
-
-
-
             int saldo = 0;
 
             // Realizar la consulta para obtener el saldo de la cuenta en la tabla Cuenta_Corriente
@@ -243,60 +243,29 @@ namespace Capa_Datos
                 }
             }
 
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
+        //Metodo para actualizar el estado de las trasacciones
+        public void ActualizarEstado(String codigo,String estado)
+        {
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                string query = "UPDATE transaccion SET  Estado = @Estado" +
+                    "WHERE Codigo = @Codigo";
+
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@Codigo", codigo);
+                    command.Parameters.AddWithValue("@Estado", estado);
+
+                    connection.Open();
+                    command.ExecuteNonQuery();
+                }
+            }
+        }
+
+
+
     }
 
 }

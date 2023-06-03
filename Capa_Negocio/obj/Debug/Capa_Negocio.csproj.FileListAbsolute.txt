@@ -37,3 +37,7 @@ C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.dll
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\bin\Debug\Capa_Negocio.dll.config
 C:\Users\charl\Downloads\WebApi2\Capa_Negocio\bin\Debug\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Negocio\bin\Debug\Capa_Negocio.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Negocio\bin\Debug\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Negocio\bin\Debug\Capa_Entidad.dll.config
+C:\Users\charl\Downloads\WebApi2\Capa_Negocio\bin\Debug\Capa_Entidad.dll.config

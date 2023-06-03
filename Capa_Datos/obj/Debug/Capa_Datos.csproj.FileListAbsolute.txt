@@ -30,3 +30,6 @@ C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComp
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.dll
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\obj\Debug\Capa_Datos.pdb
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll.config
+C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll.config
+C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll.config

@@ -25,10 +25,16 @@ namespace WebApi2.Controllers
         [HttpPost]
         public IHttpActionResult CrearAutorizacion(Autorizaciones autorizacion)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             cn_autorizacion.CrearAutorizacion(autorizacion);
-            return Ok();
+            return CreatedAtRoute("DefaultApi", new { id = autorizacion.Codigo }, autorizacion);
         }
 
+        //Actualizar el estado de las actualizaciones
         [HttpPut]
         public IHttpActionResult ActualizarAutorizacion(Autorizaciones autorizacion)
         {

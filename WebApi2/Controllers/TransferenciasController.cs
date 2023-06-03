@@ -43,7 +43,24 @@ namespace WebApi2.Controllers
         }
 
         //Actualizar el estado de las transferencia interbancarias
+        [HttpPut]
+        public IHttpActionResult ActualizarEstado(String codigo,String estado)
+        {
+            try
+            {
+                // Validar los datos de la transacción
+                // ...
 
+                // Registrar la transferencia interbancaria
+                gestorTransacciones.ActualizarEstado(codigo, estado);
+
+                return Ok("Cambio de estado con satisfaccion");
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
 
 
 

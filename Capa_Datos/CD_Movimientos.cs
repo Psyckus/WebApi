@@ -144,6 +144,7 @@ namespace Capa_Datos
 
 
         //metodos para obtener los movimientos 
+        //Ya tiene un procedimiento almacenado
         public List<Movimiento> ObtenerMovimientosPorCuenta(string numCuenta)
         {
             List<Movimiento> movimientos = new List<Movimiento>();
@@ -187,6 +188,7 @@ namespace Capa_Datos
         }
 
 
+        //Ya tiene procedimiento almacenado
         public List<MovimientoCorriente> ObtenerMovimientosCorrientesPorCuenta(string numCuenta)
         {
             List<MovimientoCorriente> movimientosCorrientes = new List<MovimientoCorriente>();

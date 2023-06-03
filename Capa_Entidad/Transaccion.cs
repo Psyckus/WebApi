@@ -8,6 +8,7 @@ namespace Capa_Entidad
 {
     public class Transaccion
     {
+        public string codigo { get; set; }
   
         public string BancoOrigen { get; set; }
         public string BancoDestino { get; set; }

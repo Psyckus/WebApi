@@ -24,11 +24,23 @@ namespace WebApi2.Controllers
         {
             try
             {
-                // Validar datos de entrada
-                if (string.IsNullOrEmpty(request.Username) || string.IsNullOrEmpty(request.Password))
+                if (!ModelState.IsValid)
                 {
-                    return BadRequest("Los datos de usuario y contraseña son requeridos.");
+                    // Si la validación falla, se retorna un error de BadRequest con los mensajes de validación
+                    return BadRequest(ModelState);
                 }
+                // Validar datos de entrada
+                bool usuarioExiste = cn_usuarios.VerificarUsuarioExistente(request.Username);
+
+                if (!usuarioExiste)
+                {
+
+                    return NotFound();
+
+
+                }
+
+
 
                 // Llamar al método de lógica de negocio para realizar el login
                 bool loginResult = cn_usuarios.Login(request.Username, request.Password);
@@ -39,7 +51,7 @@ namespace WebApi2.Controllers
                 }
                 else
                 {
-                    return BadRequest("Datos de inicio de sesión incorrectos"); // Agregar BadRequest en caso de datos incorrectos
+                    return NotFound(); // Agregar BadRequest en caso de datos incorrectos
                 }
             }
             catch (Exception ex)

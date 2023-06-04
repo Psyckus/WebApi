@@ -26,6 +26,12 @@ namespace WebApi2.Controllers
         {
             try
             {
+
+                if (!ModelState.IsValid)
+                {
+                    // Si la validación falla, se retorna un error de BadRequest con los mensajes de validación
+                    return BadRequest(ModelState);
+                }
                 cn_movimientos.RegistrarMovimientos(movimiento);
                 return Ok("Movimiento registrado correctamente.");
             }
@@ -41,6 +47,11 @@ namespace WebApi2.Controllers
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    // Si la validación falla, se retorna un error de BadRequest con los mensajes de validación
+                    return BadRequest(ModelState);
+                }
                 cn_movimientos.RegistrarMovimientoCorriente(movimientoCorriente);
                 return Ok("Movimiento registrado correctamente.");
             }

@@ -10,10 +10,11 @@ namespace Capa_Negocio
 {
     public class CN_RegistrarMovimiento
     {
+        private CD_Transaccion datosTransaccion;
         private CD_Movimientos datosMovimientos;
         public CN_RegistrarMovimiento()
         {
-
+            datosTransaccion = new CD_Transaccion();
             datosMovimientos = new CD_Movimientos();
 
         }
@@ -21,7 +22,17 @@ namespace Capa_Negocio
         {
             // Realizar validaciones según los requisitos mencionados
             // (existencia de la cuenta, fecha correcta, monto no negativo, etc.)
+            int tipoTransaccionID = int.Parse(movimiento.TipoTransaccion);
+            Capa_Entidad.TipoTransaccion tipoTransaccionObj = datosTransaccion.ObtenerTipoTransaccionPorID(tipoTransaccionID);
+            string tipoTransaccion = tipoTransaccionObj.Tipo_Transaccion;
 
+            if (tipoTransaccion == "Interbancaria")
+            {
+                if (movimiento.Identificador == 2 || movimiento.Identificador == 3)
+                {
+                    throw new Exception("Se requiere un identificador único para las transacciones interbancarias.");
+                }
+            }
             // Validación de la cuenta existente
             if (!datosMovimientos.ExisteCuenta(movimiento.Cuenta))
             {
@@ -68,7 +79,17 @@ namespace Capa_Negocio
         {
             // Realizar validaciones según los requisitos mencionados
             // (existencia de la cuenta, fecha correcta, monto no negativo, etc.)
+            int tipoTransaccionID = int.Parse(movimientoCorriente.TipoTransaccion);
+            Capa_Entidad.TipoTransaccion tipoTransaccionObj = datosTransaccion.ObtenerTipoTransaccionPorID(tipoTransaccionID);
+            string tipoTransaccion = tipoTransaccionObj.Tipo_Transaccion;
 
+            if (tipoTransaccion == "Interbancaria")
+            {
+                if (movimientoCorriente.Identificador == 2 || movimientoCorriente.Identificador == 3)
+                {
+                    throw new Exception("Se requiere un identificador único para las transacciones interbancarias.");
+                }
+            }
             // Validación de la cuenta existente
             if (!datosMovimientos.ExisteCuenta(movimientoCorriente.CuentaCorriente))
             {

@@ -33,3 +33,16 @@ C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll.config
 C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Datos.dll.config
 C:\Users\franc\Desktop\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll.config
 C:\Users\charl\Downloads\WebApi2\Capa_Datos\bin\Debug\Capa_Entidad.dll.config
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Datos.dll.config
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Datos.dll
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Datos.pdb
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Entidad.dll
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Entidad.pdb
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Capa_Entidad.dll.config
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\obj\Debug\Capa_Datos.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\obj\Debug\Capa_Datos.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\obj\Debug\Capa_Datos.csproj.CopyComplete
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\obj\Debug\Capa_Datos.dll
+C:\Users\Usuario\OneDrive\Escritorio\New folder (3)\WebApi\Capa_Datos\obj\Debug\Capa_Datos.pdb

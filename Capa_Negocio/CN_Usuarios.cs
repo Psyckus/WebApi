@@ -26,7 +26,15 @@ namespace Capa_Negocio
             return loginResult;
         }
 
+        public bool VerificarUsuarioExistente(string username)
+        {
+            // Lógica de verificación de usuario existente en la capa de negocios
 
+            // Llamada al método en la capa de datos para verificar si el usuario existe
+            bool usuarioExiste = Usuarios.VerificarUsuarioExistente(username);
+
+            return usuarioExiste;
+        }
 
     }
 }
